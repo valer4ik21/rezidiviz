@@ -1,0 +1,114 @@
+.humen{
+    padding: 80px 0;
+    background-color: #F7F8F8;
+
+    &__title{
+        color: #003331;
+        font-family: 'Public Sans';
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 13px;
+    }
+
+    &__text{
+        color: rgba(53, 83, 98, 0.80);
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 449px;
+        margin-bottom: 37px;                
+    }
+
+    &__buttom{
+        display: inline-block;
+        color: #00413E;
+        text-align: center;
+        font-family: 'Public Sans';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        border: 1px solid rgba(53, 83, 98, 0.20);
+        border-radius: 80px;
+        padding: 17px 33px;
+        max-width: 153px;
+
+        &:hover{
+            color: #10837e;
+            border: 1px solid rgba(60, 102, 123, 0.2);
+        }
+    }
+
+    &__content{
+        grid-column: 6 span;
+    }
+
+    &__painting{
+        grid-column: 6 span;
+        display: flex;
+        gap: 8px;
+    }
+
+    &__img{
+        width: 235px;
+        height: 266px;
+    }
+
+    &__img-second{
+        width: 317px;
+        height: 262px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .humen__painting{
+        flex-wrap: wrap;
+        grid-column: 12 span;
+        justify-content: center;
+    }
+
+    .humen__content{
+        grid-column: 12 span;
+        text-align: center;
+    }
+
+    .humen__text{
+        margin: 0 auto 37px;
+    }
+
+    .humen__container{
+        gap: 20px;
+    }
+
+    .humen__img{
+        display: block;
+    }
+
+    .humen__img-second{
+        display: block;
+    }
+}
+
+@media(max-width:768px){
+
+    .humen__content{
+        grid-column: 4 span;
+    }
+
+    .humen__img{
+        width: 282px;
+    }
+
+    .humen__img-second{
+        width: 282px;
+    }
+
+    .humen__painting{
+        grid-column: 4 span;
+    }
+}
+

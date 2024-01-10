@@ -1,0 +1,123 @@
+.footer{
+    
+    &__top{
+        background-color: #001414;
+        padding-top: 112px;
+        padding-bottom: 137px;
+    }
+
+
+    &__title{
+        color: #7D9798;
+        font-family: 'Public Sans';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        
+        &::after{  
+            display: block;
+            content: '';
+            background-color: #25B895;
+            width: 16px;
+            height: 1px;
+            margin: 24px 0;
+        }
+    }
+
+    &__link{
+        display: block;
+        color: #EDECEB;
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    &__item{
+        grid-column: 2 span;
+    }
+
+    &__network{
+        grid-column: 11/2 span;
+    }
+
+    &__bottom{
+        background-color: #000F0F;
+        padding-top: 40px;
+        padding-bottom: 72px;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img{
+        
+    }
+
+    &__content-top{
+        display: flex;
+        justify-content: end;
+    }
+
+    &__link-top{
+        display: inline-block;
+        color: #E5ECEC;
+        font-family: 'Public Sans';
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        text-decoration: none;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        text-align: right;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__link-bottom{
+        color: #E5ECEC;
+        font-family: 'Public Sans';
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        text-decoration: none;
+
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .footer__item{
+        grid-column: 2 span;
+        margin-bottom: 20px;
+    }
+
+    .footer__network{
+        grid-column: 3/2 span;
+        
+    }
+}
+
+@media(max-width: 520px){
+    .footer__item{
+        grid-column: 4 span;
+        text-align: center;
+    }
+
+    .footer__network{
+        grid-column: 4 span;
+    }
+
+    .footer__title::after{
+        margin: 24px auto;
+    }
+}

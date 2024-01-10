@@ -1,0 +1,116 @@
+.home{
+
+    background-image: url(../img/fone/IMAGE.png );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 776px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:189px;
+    padding-bottom: 40px;
+    
+
+    &__content{
+        grid-column: 6 span;
+    }
+
+    &__inner{
+        flex-grow: 1;
+    }
+
+    &__title{
+        color: #FFF;
+        font-family: 'Libre Baskerville';
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 44px; 
+        letter-spacing: 1.2px;
+        margin-bottom: 29px;
+    }
+
+    &__text{
+        color: #FFF;
+        font-family: 'Public Sans';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        margin-bottom: 29px;
+    }
+
+    &__buttom{
+        display: inline-block;
+        color: #FFF;
+        font-family:'Public Sans';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        border-radius: 80px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        padding: 17px 33px;
+        text-decoration: none;
+    }
+
+    &__item{
+        grid-column: 2 span;
+        color: #FFF;
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.60);
+        padding-top: 17px;
+    }
+
+    &__footer-title{
+        display: inline-block;
+        color: #FFF;
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:768px){
+    .home__content{
+        grid-column: 3 span;
+    }
+
+    .home{
+        padding-top: 112px;
+    }
+}
+
+@media (max-width:520px){
+    .home__title{
+        font-size: 27px;
+        line-height: 33px;
+        margin-bottom: 23px;
+    }
+    
+    .home{
+        padding-top: 80px;
+    }
+    
+    .home__buttom{
+        padding: 14px 28px;
+        font-size: 10px;
+    }
+
+    .home__text{
+        margin-bottom: 19px;
+    }
+
+    .home__content{
+        grid-column: 4 span;
+    }
+}
+
+

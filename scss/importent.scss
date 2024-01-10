@@ -1,0 +1,88 @@
+.importent{
+    background-color: #F4F5F5;
+    padding-bottom: 141px;
+
+    &__title{
+        color: #003331;
+        font-family: 'Libre Baskerville';
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 38px; 
+        letter-spacing: 1.2px;
+        grid-column: 5 span;
+    }
+
+    &__content-title{
+        color: #003331;
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__text{
+        color: rgba(53, 83, 98, 0.80);
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 256px;
+    }
+
+    &__content{
+       grid-template-columns: repeat(6, 1fr);
+       grid-column: 7/6 span;
+       row-gap: 36px;
+    }
+       
+    &__item{
+        grid-column: 3 span;
+    }
+}
+
+@media (max-width:991px) {
+    .importent__title{
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .importent__text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media(max-width:768px){
+    .importent__title{
+        grid-column: 4 span;
+        margin-bottom: 30px;
+    }
+
+    .importent__content{
+        grid-column: 4 span;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media (max-width:520px) {
+    .importent__text{
+        max-width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    .importent__title{
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .importent__text{
+        font-size: 13px;
+        line-height: 19px;
+    }
+}
